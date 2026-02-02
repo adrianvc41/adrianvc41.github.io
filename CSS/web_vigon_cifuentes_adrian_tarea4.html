@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS 4 · Modelo de caja en página de criaturas coloridas — Adrián Vigón Cifuentes</title>
+    <style>
+	
+	/* ===== TIPOGRAFÍA Y FONDO GENERAL ===== */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: rgb(245, 247, 250);
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== ZONAS SEMÁNTICAS COMO CAJAS ===== */
+header, nav, main, footer {
+  max-width: 1000px;
+  margin: 20px auto;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(210, 220, 230);
+  border-radius: 14px;
+  padding: 16px;
+}
+
+/* Header: centrado y espaciado (sin imponer color, lo decidirán las clases si lo deseas) */
+header h1 {
+  text-align: center;
+  margin: 0 0 10px 0;
+}
+
+/* Nav: que se lea limpio (sin fijar colores de títulos de grupo) */
+nav h2 {
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0 0 0 18px;
+}
+
+/* Enlaces del nav: un color neutro (no depende del grupo) */
+nav a {
+  color: rgb(27, 38, 59);
+}
+
+/* ===== SECCIONES DE GRUPO COMO “BLOQUES” ===== */
+section {
+  border: 2px dashed rgb(220, 226, 230);
+  border-radius: 12px;
+  padding: 14px;
+  margin: 16px 0;
+  background-color: rgb(250, 251, 252);
+}
+
+/* ===== TARJETAS (article) ===== */
+article {
+  border: 1px solid rgb(225, 230, 235);
+  background-color: rgb(255, 255, 255);
+  border-radius: 12px;
+  padding: 14px;
+  margin: 12px 0;
+}
+    
+	  
+	  .texto{
+	  color: black
+	  }
+	  
+	  .negrita{
+	  color: black
+	  }
+
+      .grupoa{
+        background-color: rgb(230, 255, 230);
+      }
+	  
+	  .grupoa .titulo1{
+	  color: rgb(76, 175, 80)
+	  }
+	  
+	  .grupoa .titulo2{
+	  color: rgb(0, 102, 204)
+	  }
+	  
+	  .grupoa .negrita{
+	  color: rgb(255, 183, 77)
+	  }
+	  
+
+       .presentacion{
+	   background-color: rgb(214, 234, 248);
+	   }
+	   
+	   .presentacion .titulo1{
+	   color: rgb(41, 128, 185)
+	   }
+	   
+	   .presentacion .titulo2{
+	   color: rgb(41, 128, 185);
+	   }
+	   
+	   .grupob{
+	   background-color: rgb(255, 230, 230)
+       }
+	  
+	  .grupob .titulo1{
+	  color: rgb(183, 28, 28)
+       }
+
+      .grupob .titulo2{
+	  color: rgb(183, 28, 28)
+       }
+
+      .volver{
+	  text-align: center;
+	  }
+	  
+	  .b {
+	  background-color: white;
+	  }
+
+</style>
+  </head>
+  <body>
+<main>
+<section class="presentacion">
+
+<article class="presentacion"> 
+
+<header class="b">
+
+<h1 class="titulo1">Presentación</h1>
+<p>Bienvenido a esta página web, un espacio informativo dedicado al estudio y conocimiento de seis animales representativos de la biodiversidad mundial. En este sitio se presenta información detallada sobre sus características físicas, comportamiento, hábitat natural y los rasgos que los distinguen, con especial atención a su coloración y adaptación al entorno.<br>El contenido ha sido elaborado con un enfoque claro y accesible, con el objetivo de facilitar la comprensión y promover el interés por el mundo natural. A través de descripciones precisas y recursos visuales, esta página invita a descubrir la diversidad y riqueza de estas especies.<br>Esperamos que este recorrido resulte informativo y enriquecedor.
+
+</header>
+
+<nav class="b">
+
+<h2 id="indice" class="titulo2">Índice</h2>
+
+<ul class="texto">
+      <li><a href="#titulo-animal1">Guacamayo</a></li>
+      <li><a href="#titulo-animal2">Tucán</a></li>
+	  <li><a href="#titulo-animal3">Tángara de cabeza verde</a></li>
+	  <li><a href="#titulo-animal4">Serpiente coral</a></li>
+	  <li><a href="#titulo-animal5">Mariquita</a></li>
+	  <li><a href="#titulo-animal6">Rana arlequín</a></li>
+    </ul>
+   
+   </nav>
+   
+   </article>
+   
+   </section>
+   
+   <section class="grupoa">
+   
+   <article class="grupoa">
+   
+ <h1 id="titulo-animal1" class="titulo1">Guacamayo</h1>
+
+    
+	<h2 class="titulo2">Características Físicas</h2>
+
+<ul class="texto">
+<li><strong class="negrita">Tamaño:</strong> Son aves grandes, con una longitud aproximada de entre 80 y 100 cm, incluyendo su larga cola.</li>
+
+<li><strong class="negrita">Plumaje:</strong> Su plumaje es muy llamativo y colorido. Predominan colores intensos como el rojo, azul, amarillo y verde, distribuidos de forma brillante por todo su cuerpo, lo que los convierte en unas de las aves más vistosas del mundo.</li>
+
+<li><strong class="negrita">Ojos:</strong> Tienen ojos grandes y expresivos, rodeados por una zona de piel blanca sin plumas, lo que les da una apariencia muy característica.</li>
+</ul>
+
+
+<h2 class="titulo2">Comportamiento y Personalidad</h2>
+
+<ul class="texto">
+<li><strong class="negrita">Sociales:</strong> Son aves extremadamente sociales que suelen vivir en parejas o en grandes bandadas.</li>
+
+<li><strong class="negrita">Inteligentes:</strong> Destacan por su alta inteligencia, capacidad de aprendizaje y habilidad para imitar sonidos.</li>
+
+<li><strong class="negrita">Ruidosos:</strong> Utilizan vocalizaciones fuertes para comunicarse, especialmente al volar o cuando interactúan con otros guacamayos.</li>
+</ul>
+
+
+<h2 class="titulo2">Hábitat Natural</h2>
+
+<ul class="texto">
+<li><strong class="negrita">Distribución:</strong> Habitan principalmente en selvas tropicales de América Central y América del Sur.</li>
+
+<li><strong class="negrita">Vida en libertad:</strong> Viven en zonas boscosas densas, cerca de ríos, donde encuentran alimento y lugares para anidar.</li>
+</ul>
+
+
+<h2 class="titulo2">Cuidado en Cautiverio</h2>
+
+<ul class="texto">
+<li><strong class="negrita">Alimentación:</strong> Su dieta se basa en frutas, semillas, nueces y vegetales, y debe ser variada para mantener su salud.</li>
+
+<li><strong class="negrita">Alojamiento:</strong> Requieren espacios amplios para volar, enriquecimiento constante y mucha interacción social.</li>
+
+<li><strong class="negrita">Expectativa de vida:</strong> Pueden vivir entre 50 y 60 años con los cuidados adecuados.</li>
+</ul>
+
+
+<h2 class="titulo2">Reproducción</h2>
+
+<ul class="texto">
+<li><strong class="negrita">Vínculos fuertes:</strong> Forman parejas monógamas y mantienen fuertes lazos con su compañero.</li>
+
+<li><strong class="negrita">Anidación:</strong> La hembra pone entre 1 y 3 huevos, que son incubados por ambos padres.</li>
+</ul>
+    <img src="fotos/Fotolia_90959716_Subscription_Monthly_XXL-1.jpg"
+         alt="..."
+         width="500">
+		 
+		 <nav>
+		 
+<p class="volver"><a href="#indice">Volver al índice</a></p>
+
+</nav>
+
+</article>
+
+<article class="grupoa">
+
+<h1 id="titulo-animal2" class="titulo1">Tucán</h1>
+
+    
+	<h2 class="titulo2">Características Físicas</h2>
+
+<ul class="texto">
+<li><strong class="negrita">Tamaño:</strong> Son aves medianas a grandes, con una longitud que oscila entre 45 y 65 cm.</li>
+
+<li><strong class="negrita">Plumaje:</strong> Su plumaje es principalmente negro, combinado con zonas de blanco, amarillo o rojo, creando un contraste muy marcado y elegante.</li>
+
+<li><strong class="negrita">Pico:</strong> Poseen un pico grande y colorido, ligero a pesar de su tamaño, que utilizan para alimentarse y regular su temperatura corporal.</li>
+</ul>
+
+
+<h2 class="titulo2">Comportamiento y Personalidad</h2>
+
+<ul class="texto">
+<li><strong class="negrita">Sociales:</strong> Viven en pequeños grupos y son aves muy sociables.</li>
+
+<li><strong class="negrita">Curiosos:</strong> Son activos y exploradores, mostrando una personalidad inquisitiva.</li>
+
+<li><strong class="negrita">Vocales:</strong> Emiten sonidos graves y repetitivos para comunicarse entre ellos.</li>
+</ul>
+
+
+<h2 class="titulo2">Hábitat Natural</h2>
+
+<ul class="texto">
+<li><strong class="negrita">Distribución:</strong> Se encuentran en selvas tropicales de América Central y América del Sur.</li>
+
+<li><strong class="negrita">Vida en libertad:</strong> Habitan en las copas de los árboles, donde se desplazan saltando entre ramas.</li>
+</ul>
+
+
+<h2 class="titulo2">Cuidado en Cautiverio</h2>
+
+<ul class="texto">
+<li><strong class="negrita">Alimentación:</strong> Se alimentan principalmente de frutas, complementadas con insectos y pequeñas presas.</li>
+
+<li><strong class="negrita">Alojamiento:</strong> Necesitan jaulas amplias y un ambiente tranquilo para reducir el estrés.</li>
+
+<li><strong class="negrita">Expectativa de vida:</strong> Pueden vivir entre 15 y 20 años.</li>
+</ul>
+
+
+<h2 class="titulo2">Reproducción</h2>
+
+<ul class="texto">
+<li><strong class="negrita">Vínculos sociales:</strong> Forman parejas estables durante la temporada reproductiva.</li>
+
+<li><strong class="negrita">Anidación:</strong> Anidan en cavidades de árboles, donde la hembra pone de 2 a 4 huevos.</li>
+</ul>
+    <img src="fotos/Keel-billed_Toucan_(16201157519).jpg"
+         alt="..."
+         width="500">
+		 
+		 <nav>
+		 
+<p class="volver"><a href="#indice">Volver al índice</a></p>
+
+</nav>
+
+</article>
+
+<article class="grupoa">
+
+<h1 id="titulo-animal3" class="titulo1">Tángara de cabeza verde</h1>
+
+    
+	<h2 class="titulo2">Características Físicas</h2>
+
+<ul class="texto">
+<li><strong class="negrita">Tamaño:</strong> Es un ave pequeña, con una longitud aproximada de entre 13 y 15 cm.</li>
+
+<li><strong class="negrita">Plumaje:</strong> Presenta un plumaje muy brillante. Su cabeza es de color verde intenso, las alas tienen tonos azulados y el pecho y vientre son de un amarillo vivo, creando una combinación de colores muy llamativa.</li>
+
+<li><strong class="negrita">Ojos:</strong> Tiene ojos pequeños y oscuros que contrastan con su plumaje colorido.</li>
+</ul>
+
+
+<h2 class="titulo2">Comportamiento y Personalidad</h2>
+
+<ul class="texto">
+<li><strong class="negrita">Sociales:</strong> Suelen vivir en parejas o pequeños grupos.</li>
+
+<li><strong class="negrita">Activas:</strong> Son aves muy dinámicas y se desplazan constantemente entre ramas.</li>
+
+<li><strong class="negrita">Pacíficas:</strong> No suelen mostrar comportamientos agresivos.</li>
+</ul>
+
+
+<h2 class="titulo2">Hábitat Natural</h2>
+
+<ul class="texto">
+<li><strong class="negrita">Distribución:</strong> Habita principalmente en bosques tropicales de Sudamérica, especialmente en Brasil.</li>
+
+<li><strong class="negrita">Vida en libertad:</strong> Se mueve entre la vegetación densa en busca de alimento.</li>
+</ul>
+
+
+<h2 class="titulo2">Cuidado en Cautiverio</h2>
+
+<ul class="texto">
+<li><strong class="negrita">Alimentación:</strong> Se alimenta de frutas, insectos y pequeños invertebrados.</li>
+
+<li><strong class="negrita">Alojamiento:</strong> No es común en cautiverio, ya que requiere condiciones muy específicas.</li>
+
+<li><strong class="negrita">Expectativa de vida:</strong> En estado natural, puede vivir alrededor de 10 a 15 años.</li>
+</ul>
+
+
+<h2 class="titulo2">Reproducción</h2>
+
+<ul class="texto">
+<li><strong class="negrita">Vínculos:</strong> Forman parejas durante la época reproductiva.</li>
+
+<li><strong class="negrita">Anidación:</strong> Construyen nidos pequeños donde la hembra pone entre 2 y 3 huevos.</li>
+</ul>
+    <img src="fotos/blue-green-yellow-bird-wallpaper-preview.jpg"
+         alt="..."
+         width="500">
+		 
+		 <nav>
+		 
+<p class="volver"><a href="#indice">Volver al índice</a></p>
+
+</nav>
+
+</article>
+
+</section>
+
+<section class="grupob">
+
+<article class="grupob">
+
+<h1 id="titulo-animal4" class="titulo1">Serpiente coral</h1>
+
+
+<h2 class="titulo2">Características físicas</h2>
+
+<ul class="texto">
+<li><strong class="negrita">Tamaño:</strong> Es una serpiente pequeña a mediana, con una longitud que suele variar entre 60 cm y 1 metro.</li>
+<li><strong class="negrita">Coloración:</strong> Su cuerpo presenta un patrón muy llamativo de anillos rojos, negros y blancos (o amarillos), distribuidos de forma regular. Esta combinación de colores vivos sirve como advertencia para posibles depredadores.</li>
+<li><strong class="negrita">Ojos:</strong> Tiene ojos pequeños y oscuros, acordes a su cabeza estrecha y alargada.</li>
+</ul>
+
+
+<h2 class="titulo2">Comportamiento y personalidad</h2>
+
+<ul class="texto">
+<li><strong class="negrita">Reservada:</strong> Es una especie tímida y poco agresiva que evita el contacto con otros animales.</li>
+<li><strong class="negrita">Defensiva:</strong> Utiliza su coloración brillante como mecanismo de defensa para alertar de su toxicidad.</li>
+</ul>
+
+
+<h2 class="titulo2">Hábitat Natural</h2>
+
+<ul class="texto">
+<li><strong class="negrita">Distribución:</strong> Se encuentra en distintas regiones de América, desde el sur de Estados Unidos hasta Sudamérica.</li>
+<li><strong class="negrita">Vida en libertad:</strong> Habita en selvas, bosques y zonas húmedas, donde se esconde entre hojas y tierra.</li>
+</ul>
+
+
+<h2 class="titulo2">Reproducción</h2>
+
+<ul class="texto">
+<li><strong class="negrita">Tipo de reproducción:</strong> Es ovípara; la hembra pone entre 3 y 12 huevos.</li>
+</ul>
+<img src="fotos/cobra-coral.jpg"
+     alt="..."
+     width="500">
+	 
+	 <nav>
+	 
+	 <p class="volver"><a href="#indice">Volver al índice</a></p>
+	 
+	 </nav>
+	 
+	 </article>
+	 
+	 <article class="grupob">
+	 
+	 <h1 id="titulo-animal5" class="titulo1">Mariquita</h1>
+
+
+<h2 class="titulo2">Características físicas</h2>
+
+<ul class="texto">
+<li><strong class="negrita">Tamaño:</strong> Es un insecto pequeño, con un tamaño aproximado de entre 5 y 10 mm.</li>
+<li><strong class="negrita">Coloración:</strong> Su cuerpo es de color rojo brillante con puntos negros bien definidos. Algunas especies presentan detalles blancos o negros en la cabeza.</li>
+<li><strong class="negrita">Ojos:</strong> Tiene 6 ojos pequeños y oscuros, situados a los lados de la cabeza.</li>
+</ul>
+
+
+<h2 class="titulo2">Comportamiento y personalidad</h2>
+
+<ul class="texto">
+<li><strong class="negrita">Activa:</strong> Es muy activa durante el día y suele desplazarse constantemente en busca de alimento.</li>
+<li><strong class="negrita">Beneficiosa:</strong> Es conocida por ser un insecto útil para el ecosistema, ya que se alimenta de plagas como los pulgones.</li>
+</ul>
+
+
+<h2 class="titulo2">Hábitat Natural</h2>
+
+<ul class="texto">
+<li><strong class="negrita">Distribución:</strong> Se encuentra en casi todo el mundo, especialmente en jardines, campos y zonas verdes.</li>
+<li><strong class="negrita">Vida en libertad:</strong> Habita sobre plantas y cultivos, donde encuentra alimento y refugio.</li>
+</ul>
+
+
+<h2 class="titulo2">Reproducción</h2>
+
+<ul class="texto">
+<li><strong class="negrita">Ciclo de vida:</strong> Pone huevos en las hojas de las plantas, de los cuales nacen larvas que luego se transforman en adultas.</li>
+</ul>
+<img src="fotos/jyhtdjyh.jpg"
+     alt="..."
+     width="500">
+	 
+	 <nav>
+	 
+	 <p class="volver"><a href="#indice">Volver al índice</a></p>
+	 
+	 </nav>
+	 
+	 </article>
+	 
+	 <article class="grupob">
+	 
+	 <h1 id="titulo-animal6" class="titulo1">Rana arlequín</h1>
+
+
+<h2 class="titulo2">Características físicas</h2>
+
+<ul class="texto">
+<li><strong class="negrita">Tamaño:</strong> Es una rana pequeña, generalmente mide entre 3 y 5 cm.</li>
+<li><strong class="negrita">Coloración:</strong> Presenta una combinación muy intensa de colores como rojo, negro y blanco o amarillo. Estos colores vivos advierten sobre su toxicidad.</li>
+<li><strong class="negrita">Ojos:</strong> Tiene ojos prominentes y oscuros que resaltan sobre su cabeza.</li>
+</ul>
+
+
+<h2 class="titulo2">Comportamiento y personalidad</h2>
+
+<ul class="texto">
+<li><strong class="negrita">Diurna:</strong> A diferencia de muchas ranas, es activa durante el día.</li>
+<li><strong class="negrita">Territorial:</strong> Defiende su espacio y puede mostrar comportamientos de advertencia frente a amenazas.</li>
+</ul>
+
+
+<h2 class="titulo2">Hábitat Natural</h2>
+
+<ul class="texto">
+<li><strong class="negrita">Distribución:</strong> Habita en regiones tropicales de América Central y del Sur.</li>
+<li><strong class="negrita">Vida en libertad:</strong> Vive en zonas húmedas, cerca de ríos y selvas tropicales.</li>
+</ul>
+
+
+<h2 class="titulo2">Reproducción</h2>
+
+<ul class="texto">
+<li><strong class="negrita">Reproducción acuática:</strong> Deposita sus huevos cerca del agua, donde los renacuajos completan su desarrollo.</li>
+</ul>
+<img src="fotos/000763724W.jpg"
+     alt="..."
+     width="500">
+	 
+	  <nav>
+	 
+<p class="volver"><a href="#indice">Volver al índice</a></p>
+
+</nav>
+	 
+	 </section>
+
+</article>
+
+</main>
+  </body>
+</html>
