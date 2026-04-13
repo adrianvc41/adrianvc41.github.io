@@ -1,0 +1,95 @@
+<html>
+
+<head>
+
+<title>Áreas</title>
+</head>
+
+<body>
+
+<script>
+
+//Mensaje
+
+let figura;
+
+//Elección de área
+
+figura=prompt("Elige: cuadrado, círculo, rectángulo o triángulo");
+
+//Cuadrado
+
+if (figura === "cuadrado"){
+	
+	let lado; 
+	let area;
+	
+	lado=prompt("Valor de su lado (sin unidades)");
+	
+	lado=parseFloat(lado);
+	
+	area=lado*lado;
+	
+	alert(area);
+	document.write("<h1>El resultado es:" +area+"</h1>");
+}
+
+else if (figura === "círculo"){
+	
+	let radio;
+	let area;
+	
+	radio=prompt("Valor de su radio (sin unidades)");
+	
+	radio=parseFloat(radio);
+	
+	area=Math.PI*radio*radio;
+	
+	alert(area);
+	document.write("<h1>El resultado es:" +area+"</h1>");
+}
+
+else if (figura === "rectángulo"){
+	
+	let h;
+	let b;
+	let area;
+	
+	b=prompt("Valor de su base (sin unidades)");
+	h=prompt("Valor de su altura (sin unidades)");
+	
+	b=parseFloat(b);
+	h=parseFloat(h);
+	
+	area=b*h;
+	
+	alert(area);
+	document.write("<h1>El resultado es:" +area+"</h1>")
+}
+
+else if (figura === "triángulo"){
+	
+let b;
+let h;
+let area;
+
+b=prompt("Valor de la base (sin unidades)");
+h=prompt("Valor de la altura (sin unidades)");
+
+b=parseFloat(b);
+h=parseFloat(h);
+
+area=(b*h)/2;
+
+alert(area);
+document.write("<h1>El resultado es:" +area+"</h1>");
+}
+
+else {
+	alert("Figura no válida. Inténtalo otra vez");
+}
+</script>
+
+</body>
+
+</html>
