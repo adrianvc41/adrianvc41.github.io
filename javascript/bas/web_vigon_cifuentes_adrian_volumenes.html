@@ -1,0 +1,104 @@
+<html>
+
+<head>
+
+<title>Volúmenes</title>
+
+</head>
+
+<body>
+
+<script>
+
+let figura
+
+//Elección figura
+
+figura=prompt("Elige: cubo, cilindro, prisma rectangular, pirámide rectangular")
+
+//Cubo
+
+if (figura === "cubo"){
+	
+	let lado;
+	let volumen;
+	
+	lado=prompt("Valor del lado (sin unidades)");
+	
+	lado=parseFloat(lado);
+	
+	volumen=lado*lado*lado;
+	
+	alert(volumen);
+	document.write("<h1>El resultado es:" +volumen+"</h1>");
+}
+
+else if (figura === "cilindro"){
+	
+	let r;
+	let h;
+	let volumen;
+	
+	r=prompt("Valor del radio (sin unidades)");
+	h=prompt("Valor de la altura (sin unidades)");
+	
+	r=parseFloat(r);
+	h=parseFloat(h);
+	
+	volumen=Math.PI*r*r*h;
+	
+	alert(volumen);
+	document.write("<h1>El resultado es:" +volumen+"</h1>");
+}
+
+else if (figura === "prisma rectangular"){
+	
+	let a;
+	let b;
+	let c;
+	let volumen;
+	
+	a=prompt("Valor de la anchura (sin unidades)");
+	b=prompt("Valor de la profundidad (sin unidades)");
+	c=prompt("Valor de la altura (sin unidades)");
+	
+	a=parseFloat(a);
+	b=parseFloat(b);
+	c=parseFloat(c);
+	
+	volumen=a*b*c;
+	
+	alert(volumen);
+	document.write("<h1>El resultado es:" +volumen+"</h1>");
+}
+
+else if (figura === "pirámide rectangular"){
+	
+	let a;
+	let b;
+	let c;
+	let volumen;
+	
+	a=prompt("Valor de la anchura (sin unidades)");
+	b=prompt("Valor de la profundidad (sin unidades)");
+	c=prompt("Valor de la altura (sin unidades)");
+	
+	a=parseFloat(a);
+	b=parseFloat(b);
+	c=parseFloat(c);
+	
+	volumen=(a*b*c)/3;
+	
+	alert(volumen);
+	document.write("<h1>El resultado es:" +volumen+"</h1>");
+}
+
+else{
+	alert("Figura incorrecta. Inténtalo otra vez")
+}
+
+</script>
+
+</body>
+
+</html>

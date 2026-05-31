@@ -1,0 +1,59 @@
+<html>
+
+<head>
+
+<title>Evaluar un resultado</title>
+
+</head>
+
+<body>
+
+<script>
+
+let bien;
+let mal;
+let blanco;
+let res1;
+let res2;
+let res3;
+let sol;
+
+bien=prompt("Respuestas correctas");
+mal=prompt("Respuestas incorrectas");
+blanco=prompt("Dejaste en blanco");
+
+bien=parseFloat(bien);
+mal=parseFloat(mal);
+blanco=parseFloat(blanco);
+
+res1=bien*1;
+res2=mal*(-1);
+res3=blanco*0;
+
+sol=res1+res2+res3;
+
+if (sol >=9){
+	alert("Sobresaliente")
+}
+
+else if (sol >=7){
+	alert("Notable")
+}
+
+else if (sol >=6){
+	alert("Bien")
+}
+
+else if (sol >=5){
+	alert("Suficiente")
+}
+
+else{
+	alert("Insuficiente")
+}
+
+</script>
+
+</body>
+
+</html>

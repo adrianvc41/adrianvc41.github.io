@@ -1,0 +1,85 @@
+<html>
+
+<head>
+
+<title>Calculadora de conversión</title>
+
+</head>
+
+<body>
+
+<script>
+
+let eleccion;
+
+eleccion=prompt("Elige (nº): kilómetros a metros (1), pulgadas a centímetros (2), euros a dólares (3) o hectáreas a metros cuadrados (4)");
+
+if (eleccion === "1"){
+	
+	let km;
+	let solucion;
+	
+	km=prompt("Cantidad kilómetros");
+	
+	km=parseFloat(km);
+	
+	solucion=km*1000;
+	
+	alert(solucion);
+	document.write("<h1>El resultado es:" +solucion+"</h1>");
+}
+
+else if (eleccion === "2"){
+	
+	let pulgadas;
+	let solucion;
+	
+	pulgadas=prompt("Cantidad pulgadas");
+	
+	pulgadas=parseFloat(pulgadas);
+	
+	solucion=pulgadas*2.54;
+	
+	alert(solucion);
+	document.write("<h1>El resultado es:" +solucion+ "</h1>");
+}
+
+else if (eleccion === "3"){
+	
+	let euros;
+	let solucion;
+	
+	euros=prompt("Cantidad euros");
+	
+	euros=parseFloat(euros);
+	
+	solucion=euros*1.12;
+	
+	alert(solucion);
+	document.write("<h1>El resultado es:" +solucion+"</h1>");
+}
+
+else if (eleccion === "4"){
+	
+	let hectareas;
+	let solucion;
+	
+	hectareas=prompt("Cantidad hectáreas");
+	
+	hectareas=parseFloat(hectareas);
+	
+	solucion=hectareas*10000;
+	
+	alert(solucion);
+	document.write("<h1>El resultado es:" +solucion+"</h1>");
+}
+
+else{
+	alert("Incorrecto. Vuelve a intentarlo.")
+}
+
+</script>
+
+</body>
+
+</html>

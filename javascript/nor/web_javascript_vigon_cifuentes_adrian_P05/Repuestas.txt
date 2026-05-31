@@ -1,0 +1,7 @@
+1. Realiza una potencia.
+2. Primero (**), segundo (* y /) y tercero (+ y -)
+3. Cambiar la prioridad de la jerarquía de operaciones.
+4. Math.pow(x,y)
+5. Pues como son comparaciones devuleven true or false
+6. Primero las operaciones y luego las comparaciones.
+7. Es como un "y", es decir, devuelve un true solo cuando las dos condiciones son verdaderas.

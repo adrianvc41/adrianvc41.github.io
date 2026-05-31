@@ -1,0 +1,64 @@
+ <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio 07 — Condicionales 1</title>
+    </head>
+    <body>
+
+        <h1>Ejercicio 07 — Introducción de datos y toma de decisiones</h1>
+        <p>Este programa pregunta al usuario si quiere jugar. Si responde "s", le pide que escriba el nombre de una fruta y, según la fruta que introduzca, muestra un mensaje con su precio utilizando una estructura `switch`. Después le hace una segunda pregunta para saber si quiere consultar algo más y muestra una respuesta dependiendo de lo que conteste. Si el usuario responde que no quiere jugar, el programa termina mostrando un mensaje diferente.
+</p>
+
+        <script>
+
+         let jugar = prompt("Este programa funciona tomando decisiones. ¿Quieres jugar? Responde con s si es que sí o con n si es que no");
+
+    if (jugar == "s") {
+
+        var fruta = prompt("Introduce el nombre de una fruta que desees con la primera letra en mayúscula");
+
+        switch (fruta) {
+          case 'Naranjas':
+            alert('El kilogramo de naranjas cuesta $0.59.');
+            break;
+          case 'Manzanas':
+            alert('El kilogramo de manzanas cuesta $0.32.');
+            break;
+          case 'Platanos':
+            alert('El kilogramo de plátanos cuesta $0.48.');
+            break;
+          case 'Cerezas':
+            alert('El kilogramo de cerezas cuesta $3.00.');
+            break;
+          case 'Mangos':
+          case 'Papayas':
+            alert('El kilogramo de mangos y papayas cuesta $2.79.');
+            break;
+          default:
+            alert('Lo lamentamos, por el momento no disponemos de ' + fruta + '.');
+        }
+	
+			
+        var respuesta = prompt("¿Hay algo más que quieras consultar? Responde si o no");
+
+        if (respuesta == "si") {
+            alert("No tenemos tiempo para responderte en este momento. Gracias.");
+        } else {
+            alert("Muchas gracias por tu consulta.");
+        }
+
+	}
+	
+	else if (jugar == "n") {
+		alert("Es una pena que no quieras participar Bombón de Licor")
+	}
+	
+	else {
+		alert("Escribe una respuesta válida")
+	}
+
+        </script>
+
+    </body>
+    </html>
